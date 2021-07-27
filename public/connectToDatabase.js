@@ -1,4 +1,4 @@
-function onConnect(){
+Window.onConnect = function(){
     var http = require('http');
     var mysql = require('mysql')
      var con = mysql.createConnection({
