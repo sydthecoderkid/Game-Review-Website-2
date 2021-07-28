@@ -9,7 +9,32 @@
 </head>
 
 <body>
-    
+    <h1>Sydney Reviews!</h1>
+
+    <button class="tablink" onclick="revealInfo(event,'Home')">Home</button>
+    <button class="tablink" onclick="revealInfo(event, 'gameTab')">Game Reviews</button>
+    <button class="tablink"onclick="revealInfo(event,'AboutMe')">About Me</button>
+
+    <div id="Home" class="tabcontent">
+
+        <h2>Hey! This is the homepage. </h2>
+        <h2>If you wanna say hi, shoot me a message!</h2>
+        <button onclick="onConnect()">Click me</button>
+    </div>
+
+    <div id="gameTab" class="tabcontent">
+        <h3>Reviews</h3>
+        <p>Reviews go here...</p>
+    </div>
+
+    <div id="AboutMe" class="tabcontent">
+        <h2 id="AboutMe">Who I am</h2>
+       <p id="bio">Hi! I'm Sydney. I am a seventeen year old programmer from Washington, DC and an incoming freshman at Amherst College.</p>
+       <p id="bio">I am massive fan of all things video games and I hope to one day become a gameplay programmer. I have mainly programmed apps and games, but nothing in web development. </p>
+       <p id="bio">So in an effort to diversify my portfolio, I decided it would be a good idea to build my own website from scratch!</p>
+       <p id="bio">I'll just be posting reviews of games I've played so they don't get stuck in my notes app for all eternity.</p>
+       <p id="bio">Please send me any bugs you notice or suggestions you have!</p>
+    </div>    
 </body>
 
 
