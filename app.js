@@ -9,7 +9,6 @@ app.use(express.static("public"))
 
 // define the first route
 app.get("/", function (req, res) {
-  console.log("yooo?");
   res.type('text/html');
   res.send('<h1>I am html</h1>');
   console.log("Check");
