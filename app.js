@@ -11,6 +11,7 @@ app.use(express.static("public"))
 app.get('/test', function (req, res) {
   res.type('text/html');
   res.send('<h1>I am html</h1>');
+  console.log("here");
 })
 
 // start the server listening for requests
