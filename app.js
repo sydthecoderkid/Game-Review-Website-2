@@ -14,8 +14,7 @@ app.get('/test', function (req, res) {
   var mysql = require('mysql')
    var con = mysql.createConnection({
      host   : '85.10.205.173',
-     port     :  3306,
-     port     :  80,
+     port     :  process.env.PORT,
      user     : "sydthecoderkid",
      password : "2022918055",
      database :"gamereviews"
