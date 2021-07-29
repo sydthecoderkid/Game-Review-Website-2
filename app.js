@@ -8,10 +8,9 @@ const app = express()
 app.use(express.static("public"))
 
 // define the first route
-app.get('/index.html', function (req, res) {
+app.get('/test', function (req, res) {
   res.type('text/html');
   res.send('<h1>I am html</h1>');
-  document.getElementById("h11").innerHTML = "CONNECTED";
 })
 
 // start the server listening for requests
