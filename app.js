@@ -22,7 +22,7 @@ app.get('/test', function (req, res) {
   });
   con.connect(function(err) {
       if (err) throw err;
-      con.query("SELECT * FROM Reviews", function (err, result, fields) {
+      con.query("SELECT * FROM GameReviews", function (err, result, fields) {
         if (err) throw err;
         console.log(result);
       });
