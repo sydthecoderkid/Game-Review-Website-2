@@ -1,7 +1,8 @@
 
 
 // create an express app
-const express = require("express")
+const express = require("express");
+const { Server } = require("https");
 const app = express()
 
 
@@ -13,12 +14,15 @@ app.get('/test', function (req, res) {
   var http = require('http');
   var mysql = require('mysql')
    var con = mysql.createConnection({
-     host   : '85.10.205.173',
-     user     : "sydthecoderkid",
-     password : "2022918055",
-     database :"gamereviews"
+     host   : 'localhost',
+     user     : "RhyQi441sN",
+     password : "k0AxLg3H0Q",
+     database :"RhyQi441sN",
+     host: 'remotemysql.com',
   });
   con.connect(function(err) {
+    
+  
       if (err) throw err;
       console.log("Connected!");
     });
