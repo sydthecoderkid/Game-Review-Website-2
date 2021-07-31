@@ -21,6 +21,7 @@ app.get('/test', function (req, res) {
   con.connect(function(err) {
       if (err) throw err;
       console.log("Connected!");
+      app.close();
     });
 })
 
