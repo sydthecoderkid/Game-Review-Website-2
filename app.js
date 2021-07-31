@@ -21,10 +21,11 @@ app.get('/test', function (req, res) {
      host: 'remotemysql.com',
   });
   con.connect(function(err) {
-    
-  
       if (err) throw err;
-      console.log("Connected!");
+      con.query("SELECT * FROM Reviews", function (err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+      });
     });
 })
 
