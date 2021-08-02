@@ -22,7 +22,9 @@
         <button id="submit" name="submit">Click me</button>
         <script>
             $("#submit").click(function(){
-                $.get('/test')
+                $.get("/test", function(name, status){
+                 alert("Name is: " + test);
+                });
             });
         </script>
     </div>
