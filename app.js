@@ -23,7 +23,7 @@ app.get('/test', function (req, res) {
       if (err) throw err;
       con.query("SELECT * FROM GameReviews", function (err, result, fields) {
         if (err) throw err;
-        console.log(result[0].Name);
+        changeHeader(result[0].Name);
       });
     });
 })
@@ -33,4 +33,7 @@ app.listen(process.env.PORT || 3000,
 	() => console.log("Server is running...."));
 
 
+  function changeHeader(text){
+    document.getElementById("header").innerHTML = text;
+  }
  
