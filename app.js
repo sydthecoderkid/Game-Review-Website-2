@@ -24,7 +24,6 @@ app.get('/test', function (req, res) {
       con.query("SELECT * FROM GameReviews", function (err, result, fields) {
         if (err) throw err;
         console.log(result);
-        console.log(result.Name);
       });
     });
 })
@@ -33,3 +32,5 @@ app.get('/test', function (req, res) {
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running...."));
 
+
+ 
