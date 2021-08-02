@@ -23,7 +23,7 @@ app.get('/test', function (req, res) {
       if (err) throw err;
       con.query("SELECT * FROM GameReviews", function (err, result, fields) {
         if (err) throw err;
-        console.log(result);
+        console.log(result[0].Name);
       });
     });
 })
