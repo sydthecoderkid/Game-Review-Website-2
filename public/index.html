@@ -23,7 +23,7 @@
         <script>
             $("#submit").click(function(){
                 $.get({url: "/test", success: function(result){
-                     alert("Name is: " + result);
+                    console.log("alert is " + result);
                     }
                 });
             });
