@@ -4,15 +4,14 @@
 const express = require("express");
 const { Server } = require("https");
 const app = express()
-
+var http = require('http');
+var mysql = require('mysql');
 
 // use the express-static middleware
 app.use(express.static("public"))
 
 // define the first route
 app.get('/test', function (req, res) {
-  var http = require('http');
-  var mysql = require('mysql')
    var con = mysql.createConnection({
      host   : 'localhost',
      user     : "RhyQi441sN",
@@ -20,15 +19,22 @@ app.get('/test', function (req, res) {
      database :"RhyQi441sN",
      host: 'remotemysql.com',
   });
-  con.connect(function(err) {
-      if (err) throw err;
-      con.query("SELECT * FROM GameReviews", function (err, result, fields) {
-        if (err) throw err;
-        console.log(result);
-      });
-    });
+
+  connectTo(con);
+  
 })
 
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running...."));
+
+
+function connectTo(con){ 
+  con.connect(function(err) {
+    if (err) throw err;
+    con.query("SELECT * FROM GameReviews", function (err, result, fields) {
+      if (err) throw err;
+      console.log(result);
+    });
+  });
+}
