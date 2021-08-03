@@ -20,8 +20,8 @@
         <h2>Hey! This is the homepage. </h2>
         <h2>If you wanna say hi, shoot me a message!</h2>
         <button id="submit" name="submit">Click me</button>
-        <script>            $("#submit").click(function(){
-                $.get({url: "/test", success: function(result){
+        <script>  $("#submit").click(function(){
+                $.get({ success: function(result){
                     type: 'GET';
                     console.log("alert is " + result);
                     },
