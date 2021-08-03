@@ -11,7 +11,7 @@ var mysql = require('mysql');
 app.use(express.static("public"))
 
 // define the first route
-app.get('/', function (req, res) {
+app.get('/getdata', function (req, res) {
    var con = mysql.createConnection({
      host   : 'localhost',
      user     : "RhyQi441sN",
