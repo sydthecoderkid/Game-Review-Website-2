@@ -24,7 +24,6 @@
             $("#submit").click(function(){
                 $.get({url: "/test", success: function(result){
                     type: 'GET';
-                    dataType: 'text';
                     contentType: "application/json";
                     console.log("alert is " + result);
                     },
