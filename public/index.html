@@ -28,9 +28,8 @@
                     contentType: "application/json";
                     console.log("alert is " + result);
                     },
-                    error: function (xhr, error) {
-                    console.debug(xhr); 
-                    console.debug(error);
+                    error: function (request, status, error) {
+                     alert(request.responseText);
                     }
                 });
             });
