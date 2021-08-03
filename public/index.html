@@ -28,8 +28,8 @@
                     contentType: "application/json";
                     console.log("alert is " + result);
                     },
-                    error: function (request, status, error) {
-                     alert(request.responseText);
+                    error: function (jqXHR, exception) {
+                     console.log(jqXHR, exception);
                     }
                 });
             });
