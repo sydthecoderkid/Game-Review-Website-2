@@ -26,6 +26,9 @@
                     type: 'GET';
                     console.log("alert is " + result);
                     },
+                    error: function (request, status, error) {
+                     alert(request.responseText);
+                    }
                     
                 });
             });
