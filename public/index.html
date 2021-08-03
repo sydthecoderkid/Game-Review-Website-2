@@ -22,16 +22,12 @@
         <button id="submit" name="submit">Click me</button>
         <script>  $("#submit").click(function(){
                 $.get({url: "/getdata", success: function(result){
+                    datatype: "json";
                     type: 'GET';
                     console.log("alert is " + result);
                     },
-                    error: function (request, status, error) {
-                     alert(error);
-                    },
-                    success: function(){
-                        console.log("success");
-                    }
                 });
+                
             });
         </script>
     </div>
