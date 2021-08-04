@@ -24,8 +24,7 @@
                 $.get({url: "/getdata", success: function(result){
                     datatype: "json";
                     type: 'GET';
-                    var parsed_data = JSON.parse(result);
-                    console.log("alert is " + parsed_data);
+                    console.log("alert is " + result.Name);
                     },
                 });
                 
