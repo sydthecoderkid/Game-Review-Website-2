@@ -20,7 +20,7 @@
             $.ajax({ url: "/getdata",
         context: document.body,
         success: function(data){
-            console.log(data.Name);
+            $("h3").html("Hello <b>world</b>!");
          }});
         });
     </script>
