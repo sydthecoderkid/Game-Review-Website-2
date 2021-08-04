@@ -13,22 +13,22 @@
 
     <button class="tablink" onclick="revealInfo(event,'Home')">Home</button>
     <button class="tablink" onclick="revealInfo(event, 'gameTab')">Game Reviews</button>
-    <button id="reviewtab"class="tablink"onclick="revealInfo(event,'AboutMe')">About Me</button>
+    <button id="ReviewTab" name="ReviewTab" class="tablink"onclick="revealInfo(event,'AboutMe')">About Me</button>
+    <script>  $("#ReviewTab").click(function(){
+        $.get({url: "/getdata", success: function(result){
+            datatype: "json";
+            type: 'GET';
+            console.log("alert is " + result.Name);
+            },
+        }); 
+    });
+</script>
 
     <div id="Home" class="tabcontent">
 
         <h2>Hey! This is the homepage. </h2>
         <h2>If you wanna say hi, shoot me a message!</h2>
-        <script>  $("#reviewtab").click(function(){
-                $.get({url: "/getdata", success: function(result){
-                    datatype: "json";
-                    type: 'GET';
-                    console.log("alert is " + result.Name);
-                    },
-                });
-                
-            });
-        </script>
+       
     </div>
 
     <div id="gameTab" class="tabcontent">
