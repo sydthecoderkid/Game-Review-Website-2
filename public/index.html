@@ -14,15 +14,16 @@
     <button class="tablink" onclick="revealInfo(event,'Home')">Home</button>
     <button class="tablink" onclick="revealInfo(event, 'gameTab')">Game Reviews</button>
     <button id="ReviewTab" name="ReviewTab" class="tablink"onclick="revealInfo(event,'AboutMe')">About Me</button>
-    <script>  $("#ReviewTab").click(function(){
-        $.get({url: "/getdata", success: function(result){
-            datatype: "json";
-            type: 'GET';
-            console.log("alert is " + result.Name);
-            },
-        }); 
-    });
-</script>
+ 
+    <script>
+        $(document).ready(function(){
+            $.ajax({ url: "/getdata",
+        context: document.body,
+        success: function(){
+           alert("done");
+        }});
+        });
+    </script>
 
     <div id="Home" class="tabcontent">
 
