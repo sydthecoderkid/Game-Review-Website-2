@@ -13,14 +13,13 @@
 
     <button class="tablink" onclick="revealInfo(event,'Home')">Home</button>
     <button class="tablink" onclick="revealInfo(event, 'gameTab')">Game Reviews</button>
-    <button class="tablink"onclick="revealInfo(event,'AboutMe')">About Me</button>
+    <button id="reviewtab"class="tablink"onclick="revealInfo(event,'AboutMe')">About Me</button>
 
     <div id="Home" class="tabcontent">
 
         <h2>Hey! This is the homepage. </h2>
         <h2>If you wanna say hi, shoot me a message!</h2>
-        <button id="submit" name="submit">Click me</button>
-        <script>  $("#submit").click(function(){
+        <script>  $("#reviewtab").click(function(){
                 $.get({url: "/getdata", success: function(result){
                     datatype: "json";
                     type: 'GET';
