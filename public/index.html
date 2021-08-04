@@ -19,9 +19,9 @@
         $(document).ready(function(){
             $.ajax({ url: "/getdata",
         context: document.body,
-        success: function(){
-           alert("done");
-        }});
+        success: function(data){
+            console.log(data.Name);
+         }});
         });
     </script>
 
