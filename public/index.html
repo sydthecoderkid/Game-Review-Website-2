@@ -21,11 +21,11 @@
         context: document.body,
         success: function(data){
             console.log(data.Name);
-            $("#reviewslot").html(data.Name);
+           // $("#reviewslot").html(data.Name);
          }});
         });
     </script>
-    
+
     <div id="Home" class="tabcontent">
 
         <h2>Hey! This is the homepage. </h2>
@@ -36,6 +36,11 @@
     <div id="gameTab" class="tabcontent">
         <h3>Reviews</h3>
         <p id="reviewslot">Reviews go here...</p>
+        <button class="tablink" onclick="revealInfo(event, 'gameReviewTab')">Game</button>
+    </div>
+
+    <div id="gameReviewTab" class="tabcontent">
+        <h1>Test!</h1>
     </div>
 
     <div id="AboutMe" class="tabcontent">
