@@ -40,7 +40,7 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .tabcontent {
+.tabcontent {
     color: black;
     display: none;
     padding: 100px 20px;
