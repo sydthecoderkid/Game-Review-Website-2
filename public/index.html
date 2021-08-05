@@ -21,7 +21,7 @@
         context: document.body,
         success: function(data){
             console.log(data.Name);
-            $("#header").html(data.Name);
+            $("#reviewslot").html(data.Name);
          }});
         });
     </script>
@@ -35,7 +35,7 @@
 
     <div id="gameTab" class="tabcontent">
         <h3>Reviews</h3>
-        <p>Reviews go here...</p>
+        <p id="reviewslot">Reviews go here...</p>
     </div>
 
     <div id="AboutMe" class="tabcontent">
