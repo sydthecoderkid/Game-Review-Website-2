@@ -12,6 +12,7 @@ app.use(express.static("public"))
 
 // define the first route
 app.get('/getdata', function (req, res) {
+
    var con = mysql.createPool({
      host   : 'localhost',
      user     : "RhyQi441sN",
@@ -19,13 +20,21 @@ app.get('/getdata', function (req, res) {
      database :"RhyQi441sN",
      host: 'remotemysql.com',
      
-  }.connect()
-  .then(pool => {
-    console.log('Connected to MSSQL')
-    return pool
-  }));
-  
-})
+  });
+  mysql.getConnection(function(err) {
+      if (err) throw err;
+    const getInfo = () => new Promise((resolve, reject) => {
+      con.getConnection((err, connection) => {
+        if (err) console.error(err);
+        con.query("SELECT * FROM GameReviews", function (err, result, fields) {
+          if (err) throw err;
+          res.send(result[0]);
+        });
+      });
+          connection.release(err => { if (err) console.error(err) });
+        });
+      });
+  });
 
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
