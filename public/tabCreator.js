@@ -10,13 +10,11 @@ function createTab(name, review){
     let div = document.createElement('div');
     div.id = name + "tab";
     div.className = 'tabcontent'
-    div.innerHTML = review;
     document.body.appendChild(div)
     
-    /*
     let paragraph = document.createElement('p');
     paragraph.innerHTML = review;
     div.append(paragraph);
     button.onclick = function () { revealInfo(div.id); };
-    */
+    
 }
