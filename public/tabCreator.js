@@ -21,7 +21,6 @@ function createTab(name, review, score){
         backbutton.style.visibility = 'hidden';
     }
     backbutton.id = "BackButton";
-    backbutton.style.position = 'absolute';
     div.append(backbutton);
      
     let scoreheader = document.createElement('h2');
