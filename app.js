@@ -21,7 +21,7 @@ app.get('/getdata', function (req, res) {
      host: 'remotemysql.com',
      
   });
-  mysql.getConnection(function(err) {
+  con.getConnection(function(err) {
       if (err) throw err;
     const getInfo = () => new Promise((resolve, reject) => {
       con.getConnection((err, connection) => {
