@@ -22,15 +22,14 @@ app.get('/getdata', function (req, res) {
      
   });
 
-  var getConnection = function(callback) {
-    con.getConnection(function(err, connection) {
+  con.getConnection(function(err, connection) {
          if (err) throw err;
         con.query("SELECT * FROM GameReviews", function (err, result, fields) {
           if (err) throw err;
           res.send(result[0]);
         });
     });
-};
+
    
 })
 
