@@ -14,10 +14,10 @@ function createTab(name, review, score){
 
 
     var backbutton = document.createElement('button');
-    backbutton.className = 'tablink'
     backbutton.innerHTML = "back";
     document.body.appendChild(backbutton);
-
+    div.append(backbutton);
+    //backbutton.style.visibility = 'hidden';
     
     let scoreheader = document.createElement('h2');
     scoreheader.innerHTML = score + '/10';
