@@ -23,8 +23,7 @@
         context: document.body,
         success: function(data){
             console.log(data.Name);
-            createTab(data.Name);
-           // $("#reviewslot").html(data.Name);
+            createTab(data.Name, data.Review);
          }});
         });
     </script>

@@ -1,11 +1,12 @@
 
 
-function createTab(name){
+function createTab(name, review){
     var button = document.createElement('button');
     button.className = 'gamelink'
     button.innerHTML = name;
-    button.onclick = function(){
-      alert('here be dragons');return false;
-    };
+    let div = document.createElement('div');
+    div.id = name + "tab";
+    div.className = 'tabcontent'
+    div.innerText = review;
     document.getElementById('gameTab').appendChild(button);
 }
