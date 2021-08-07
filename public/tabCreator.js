@@ -4,12 +4,19 @@ function createTab(name, review){
     var button = document.createElement('button');
     button.className = 'gamelink'
     button.innerHTML = name;
+
+
+    
     let div = document.createElement('div');
     div.id = name + "tab";
     div.className = 'tabcontent'
+    
+    
+    /*
     let paragraph = document.createElement('p');
     paragraph.innerHTML = review;
     div.append(paragraph);
     document.getElementById('gameTab').appendChild(button);
     button.onclick = function () { revealInfo(div.id); };
+    */
 }
