@@ -16,9 +16,12 @@ function createTab(name, review, score){
     var backbutton = document.createElement('button');
     backbutton.innerHTML = "back";
     document.body.appendChild(backbutton);
+    backbutton.onclick = function(){
+        revealInfo('gameTab');
+        backbutton.style.visibility = 'hidden';
+    }
     div.append(backbutton);
-    //backbutton.style.visibility = 'hidden';
-    
+     
     let scoreheader = document.createElement('h2');
     scoreheader.innerHTML = score + '/10';
     div.append(scoreheader);
