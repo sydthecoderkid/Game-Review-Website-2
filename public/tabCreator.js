@@ -12,9 +12,9 @@ function createTab(name, review, score){
     div.className = 'tabcontent';
     document.body.appendChild(div);
 
-    let score = document.createElement('h2');
-    score.innerHTML = score;
-    div.append(score);
+    let scoreheader = document.createElement('h2');
+    scoreheader.innerHTML = score;
+    div.append(scoreheader);
     
     let paragraph = document.createElement('p');
     paragraph.innerHTML = review;
