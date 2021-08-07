@@ -20,6 +20,7 @@ function createTab(name, review, score){
         revealInfo('gameTab');
         backbutton.style.visibility = 'hidden';
     }
+    backbutton.id = "BackButton";
     div.append(backbutton);
      
     let scoreheader = document.createElement('h2');
