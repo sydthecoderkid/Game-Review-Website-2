@@ -12,7 +12,7 @@ app.use(express.static("public"))
 
 // define the first route
 app.get('/getdata', function (req, res) {
-   var con = mysql.createConnection({
+   var con = mysql.createPool({
      host   : 'localhost',
      user     : "RhyQi441sN",
      password : "k0AxLg3H0Q",
