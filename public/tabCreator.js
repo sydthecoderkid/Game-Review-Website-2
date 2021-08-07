@@ -1,6 +1,6 @@
 
 
-function createTab(name, review){
+function createTab(name, review, score){
     var button = document.createElement('button');
     button.className = 'gamelink'
     button.innerHTML = name;
@@ -14,7 +14,7 @@ function createTab(name, review){
 
     
     let scoreheader = document.createElement('h2');
-    scoreheader.innerHTML = num.ToString(score);
+    scoreheader.innerHTML = score;
     div.append(scoreheader);
     
     
