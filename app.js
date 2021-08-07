@@ -18,14 +18,13 @@ app.get('/getdata', function (req, res) {
      password : "k0AxLg3H0Q",
      database :"RhyQi441sN",
      host: 'remotemysql.com',
-  });
-  con.connect(function(err) {
-      if (err) throw err;
-      con.query("SELECT * FROM GameReviews", function (err, result, fields) {
-        if (err) throw err;
-        res.send(result[0]);
-      });
-    });
+     
+  }.connect()
+  .then(pool => {
+    console.log('Connected to MSSQL')
+    return pool
+  }));
+  
 })
 
 // start the server listening for requests
