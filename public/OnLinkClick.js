@@ -3,6 +3,8 @@ function revealInfo( thisID) {
     var i, tabcontent;
   
     // Get all elements with class="tabcontent" and hide them
+    document.getElementById("BackButton").style.visibility = 'visible';
+    
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
