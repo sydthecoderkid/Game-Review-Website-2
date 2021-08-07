@@ -1,4 +1,4 @@
-function revealInfo(evt, thisID) {
+function revealInfo( thisID) {
     // Declare all variables
     var i, tabcontent;
   

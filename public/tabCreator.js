@@ -1,4 +1,3 @@
-const { event } = require("jquery");
 
 
 function createTab(name, review){
@@ -10,5 +9,5 @@ function createTab(name, review){
     div.className = 'tabcontent'
     div.innerText = review;
     document.getElementById('gameTab').appendChild(button);
-    button.onclick = revealInfo(event, div.id);
+    button.onclick = function () { revealInfo(div.id); };
 }
