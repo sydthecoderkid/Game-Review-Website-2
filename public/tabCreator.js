@@ -7,7 +7,9 @@ function createTab(name, review){
     let div = document.createElement('div');
     div.id = name + "tab";
     div.className = 'tabcontent'
-    div.innerText = review;
+    let paragraph = document.createElement('p');
+    paragraph.innerHTML = review;
+    div.append(paragraph);
     document.getElementById('gameTab').appendChild(button);
     button.onclick = function () { revealInfo(div.id); };
 }
