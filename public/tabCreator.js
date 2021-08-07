@@ -13,7 +13,7 @@ function createTab(name, review, score){
     document.body.appendChild(div);
 
     let scoreheader = document.createElement('h2');
-    scoreheader.innerHTML = score;
+    scoreheader.innerHTML = num.ToString(score);
     div.append(scoreheader);
     
     let paragraph = document.createElement('p');
