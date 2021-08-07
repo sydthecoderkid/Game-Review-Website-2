@@ -21,20 +21,18 @@ app.get('/getdata', function (req, res) {
      host: 'remotemysql.com',
      
   });
-  con.getConnection(function(err) {
-      if (err) throw err;
-    const getInfo = () => new Promise((resolve, reject) => {
-      con.getConnection((err, connection) => {
-        if (err) console.error(err);
+
+  var getConnection = function(callback) {
+    con.getConnection(function(err, connection) {
+         if (err) throw err;
         con.query("SELECT * FROM GameReviews", function (err, result, fields) {
           if (err) throw err;
           res.send(result[0]);
         });
-      });
-          connection.release(err => { if (err) console.error(err) });
-        });
-      });
-  });
+    });
+};
+   
+})
 
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
