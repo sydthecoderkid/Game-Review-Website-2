@@ -32,6 +32,7 @@ function createTab(name, review, score){
     div.append(paragraph);
     button.onclick = function () { revealInfo(div.id); };
 
+    document.getElementById('loadingtext').style.visibility = 'hidden';
   
     
 }
