@@ -12,9 +12,15 @@ function createTab(name, review, score){
     div.className = 'tabcontent';
     document.body.appendChild(div);
 
+
+    var backbutton = document.createElement('button');
+    backbutton.className = 'tablink'
+    backbutton.innerHTML = "back";
+    document.body.appendChild(backbutton);
+
     
     let scoreheader = document.createElement('h2');
-    scoreheader.innerHTML = score;
+    scoreheader.innerHTML = score + '/10';
     div.append(scoreheader);
     
     
@@ -22,5 +28,7 @@ function createTab(name, review, score){
     paragraph.innerHTML = review;
     div.append(paragraph);
     button.onclick = function () { revealInfo(div.id); };
+
+  
     
 }
