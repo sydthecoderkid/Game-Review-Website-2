@@ -12,11 +12,11 @@ function createTab(name, review){
     div.className = 'tabcontent';
     document.body.appendChild(div);
 
-    /*
+    
     let scoreheader = document.createElement('h2');
     scoreheader.innerHTML = num.ToString(score);
     div.append(scoreheader);
-    */
+    
     
     let paragraph = document.createElement('p');
     paragraph.innerHTML = review;
