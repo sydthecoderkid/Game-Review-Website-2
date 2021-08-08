@@ -67,7 +67,7 @@ h2{
   }
 
   #AboutMe{
-      font-size: 5vw;
+      font-size: 2vw;
   }
 
   #BackButton{
@@ -88,4 +88,8 @@ h2{
 
   .gamelink:hover{
     background-color:#E3242B ;
+}
+
+#p{
+    font-size: 1.5vw; 
 }
