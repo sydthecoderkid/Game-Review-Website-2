@@ -32,6 +32,7 @@ function createTab(name, review, score, hours){
     
     
     let paragraph = document.createElement('p');
+    paragraph.id = "reviewID";
     paragraph.innerHTML = review;
     div.append(paragraph);
     button.onclick = function () { revealInfo(div.id); };

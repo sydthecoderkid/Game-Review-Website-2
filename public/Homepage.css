@@ -16,7 +16,7 @@ h2{
     text-align: center;
     color:black;
     font-size: 2vw;
-    margin-top:4vw; 
+    margin-top:6vw; 
 }
 
 #heytext{
@@ -92,6 +92,11 @@ h2{
   #bio{
       font-size: 1.5vw; 
       display: inline-block;
+  }
+
+  #reviewID{
+    font-size: 1.5vw; 
+    display: inline-block;
   }
 
   .tablink:hover{
