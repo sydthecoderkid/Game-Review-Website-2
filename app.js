@@ -27,13 +27,10 @@ app.get('/getdata', function (req, res) {
          if (err) throw err;
         con.query("SELECT * FROM GameReviews", function (err, result, fields) {
           if (err) throw err;
-           if(result.length > 0){
-              for(var i in result){
-                res.write[i.Name]
-              }
-              res.end();
+           for(i = 0; i < result.length; i++){
+             res.write(result[i]);
            }
-           
+           res.end();
         });
     });
 
