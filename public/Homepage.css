@@ -84,7 +84,13 @@ h2{
   #BackButton{
     font-size: 2vw;
     margin-right: 80.5vw;
-      
+    background-color:#5D001E;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
   }
 
   #bio{
