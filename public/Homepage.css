@@ -56,14 +56,14 @@ h1{
   }
 
   #BackButton{
-      font-size: 30px;
+      font-size: 2px;
       right:90%;
       position: absolute;
       
   }
 
   #bio{
-      font-size: 4vw;
+      font-size: 2vw;
       display: inline-block;
   }
 
