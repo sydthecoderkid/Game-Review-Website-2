@@ -71,7 +71,7 @@ h2{
 .tabcontent {
     color: black;
     display: none;
-    padding: 10px 20px;
+    padding: 10vw 20vw;
     height: 100%;
     text-align: center;
     font-size: 5vw;
@@ -84,7 +84,7 @@ h2{
 
   #BackButton{
       font-size: 2vw;
-      position: absolute;
+      margin-right: 38.5vw;
       
   }
 
