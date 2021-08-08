@@ -1,8 +1,13 @@
 function revealInfo( thisID) {
     // Declare all variables
     var i, tabcontent;
-  
-    document.getElementById("BackButton").style.visibility = "visible";
+
+    if(thisID.includes("BackButton")){
+      document.getElementById("BackButton").style.visibility = "hidden";
+    }
+    else{
+      document.getElementById("BackButton").style.visibility = "visible";
+    }
     // Get all elements with class="tabcontent" and hide them
     
     tabcontent = document.getElementsByClassName("tabcontent");
