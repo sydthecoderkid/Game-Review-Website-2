@@ -23,9 +23,8 @@
         context: document.body,
         success: function(data){
              for( i =0; i < data.length; i++){
-                createTab(data[i].Name, data[i].Review, data.Score[i]);
+                createTab(data[i].Name, data[i].Review, data[i].Score);
              }
-            
             
          }});
         });
