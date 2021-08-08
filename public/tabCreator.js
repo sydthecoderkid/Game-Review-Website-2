@@ -18,7 +18,6 @@ function createTab(name, review, score, hours){
     document.body.appendChild(backbutton);
     backbutton.onclick = function(){
         revealInfo('gameTab');
-        backbutton.style.visibility = 'hidden';
     }
     backbutton.id = "BackButton";
     div.append(backbutton);
