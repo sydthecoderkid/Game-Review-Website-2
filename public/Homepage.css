@@ -20,6 +20,10 @@ h2{
 }
 
 #heytext{
+    margin-top:5vw; 
+}
+
+#heytext{
     text-align: center;
     color:black;
     font-size: 2vw;
