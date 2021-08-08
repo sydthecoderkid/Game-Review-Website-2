@@ -53,9 +53,10 @@ h2{
 
 
 .gamelink {
-    text-align:center;
     background-color:#5D001E;
     display: block;
+    text-align:center;
+    margin-top: 5vw;
     color: white;
     border: none;
     outline: none;
