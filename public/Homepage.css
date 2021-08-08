@@ -35,7 +35,7 @@ h1{
     outline: none;
     cursor: pointer;
     padding: 5px 6px;
-    margin-top: 20px;
+    margin-top: 60px;
     font-size: 20px;
     width: 30%;
     margin-left:425px;
@@ -70,3 +70,7 @@ h1{
   .tablink:hover{
       background-color:#E3242B ;
   }
+
+  .gamelink:hover{
+    background-color:#E3242B ;
+}
