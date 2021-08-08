@@ -14,7 +14,7 @@ function createTab(name, review, score, hours){
 
 
     var backbutton = document.createElement('button');
-    backbutton.innerHTML = "back";
+    backbutton.innerHTML = "Back";
     document.body.appendChild(backbutton);
     backbutton.onclick = function(){
         revealInfo('gameTab');
