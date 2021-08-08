@@ -29,8 +29,9 @@ app.get('/getdata', function (req, res) {
           if (err) throw err;
            if(result.length > 0){
              for(i =0; i <result.length; i++){
-                return res.send(result[i]);
+                 res.write(result[i]);
              }
+             res.end();
            }
         });
     });
