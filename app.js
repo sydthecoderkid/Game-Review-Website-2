@@ -6,6 +6,7 @@ const { Server } = require("https");
 const app = express()
 var http = require('http');
 var mysql = require('mysql');
+const { data } = require("jquery");
 
 // use the express-static middleware
 app.use(express.static("public"))
@@ -26,8 +27,11 @@ app.get('/getdata', function (req, res) {
          if (err) throw err;
         con.query("SELECT * FROM GameReviews", function (err, result, fields) {
           if (err) throw err;
-          res.send(result[0]);
-           
+           if(data.length > 0){
+             for(i =0; i < data.length; i++){
+                res.send(result[i]);
+             }
+           }
         });
     });
 
