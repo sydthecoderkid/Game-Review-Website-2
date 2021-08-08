@@ -8,7 +8,7 @@ body{
 h1{
     text-align: center;
     color:black;
-    font-size: 40vw;
+    font-size: 4vw;
 }
 
 .tablink {
@@ -18,11 +18,11 @@ h1{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14vw 16vw;
-    font-size: 30vw;
-    width: 30%;
-    margin-right: 15vw;
-    margin-left:20vw;
+    padding: 1vw 1.6vw;
+    font-size: 2vw;
+    width: 20%;
+    margin-right: vw;
+    margin-left:10vw;
     font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -37,8 +37,8 @@ h1{
     padding: 5vw 6vw;
     margin-top: 45vw;
     font-size: 20vw;
-    width: 30%;
-    margin-left:425vw;
+    width: 24%;
+    margin-left: 3vw;
     font-family: Arial, Helvetica, sans-serif;
   }
 
