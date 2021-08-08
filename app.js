@@ -27,9 +27,11 @@ app.get('/getdata', function (req, res) {
          if (err) throw err;
         con.query("SELECT * FROM GameReviews", function (err, result, fields) {
           if (err) throw err;
-          res.send(result[0]);
-          
-           
+           if(data.length > 0){
+             for(i =0; i <result.length; i++){
+                res.send(i);
+             }
+           }
         });
     });
 
