@@ -24,8 +24,9 @@
             $.ajax({ url: "/getdata",
         context: document.body,
         success: function(data){
-            createTab(data[0].Name, data[0].Review, data[0].Score, data[0].Hours);
-             
+             for( i =0; i < data.length; i++){
+                createTab(data[i].Name, data[i].Review, data[i].Score, data[i].Hours);
+             }
             
          }});
         });
