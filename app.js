@@ -29,7 +29,7 @@ app.get('/getdata', function (req, res) {
           if (err) throw err;
            if(result.length > 0){
               for(var i in result){
-                console.log(result[i].Name);
+                res.send[result[i]]
               }
            }
         });
