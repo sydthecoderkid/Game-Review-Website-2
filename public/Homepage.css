@@ -84,7 +84,7 @@ h2{
 
   #BackButton{
     font-size: 1.9vw;
-    margin-right: 90.5vw;
+    margin-right: 90vw;
     margin-top: 5.5vw;
     padding: .5vw .7vw;
     background-color:#5D001E;
@@ -103,6 +103,7 @@ h2{
   #reviewID{
     font-size: 1.5vw; 
     display: inline-block;
+    padding-bottom: 4vw;
   }
 
   .tablink:hover{
