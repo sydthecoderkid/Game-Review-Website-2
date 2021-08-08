@@ -49,9 +49,9 @@ h2{
     outline: none;
     cursor: pointer;
     padding: .5vw .5vw;
-    font-size: 2vw;
+    font-size: 4vw;
     width: 20%;
-    margin-left: 45vw;
+    margin-left: 35vw;
     font-family: Arial, Helvetica, sans-serif;
     display:block;
   }
