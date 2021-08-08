@@ -22,6 +22,7 @@
             $.ajax({ url: "/getdata",
         context: document.body,
         success: function(data){
+            console.log(data);
             createTab(data.Name, data.Review, data.Score);
             
          }});
