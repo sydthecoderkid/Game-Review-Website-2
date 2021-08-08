@@ -29,7 +29,7 @@ app.get('/getdata', function (req, res) {
           if (err) throw err;
            if(result.length > 0){
              for(i =0; i <result.length; i++){
-                 res.write(result[i]);
+                 res.write(result[i].toString());
              }
              res.end();
            }
