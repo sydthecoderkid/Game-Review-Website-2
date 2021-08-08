@@ -83,8 +83,7 @@ h2{
   }
 
   #BackButton{
-      font-size: 2px;
-      right:90%;
+      font-size: 2vw;
       position: absolute;
       
   }
