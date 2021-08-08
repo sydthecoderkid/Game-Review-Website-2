@@ -27,7 +27,7 @@ app.get('/getdata', function (req, res) {
          if (err) throw err;
         con.query("SELECT * FROM GameReviews", function (err, result, fields) {
           
-             res.write(result[0]);
+          res.send(result[0]);
            res.end();
         });
     });
