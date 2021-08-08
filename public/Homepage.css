@@ -17,6 +17,13 @@ h2{
     font-size: 2vw;
 }
 
+#reviewtitle{
+    text-align: center;
+    color:black;
+    font-size: 2vw;
+    margin-top: 5vw;
+}
+
 .tablink {
     background-color:#5D001E;
     color: white;
@@ -40,11 +47,11 @@ h2{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 2vw 1vw;
+    padding: .5vw .5vw;
     margin-top: 2vw;
     font-size: 2vw;
-    width: 5%;
-    margin-left: 3vw;
+    width: 20%;
+    margin-left: 10vw;
     font-family: Arial, Helvetica, sans-serif;
   }
 
