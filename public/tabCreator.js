@@ -24,6 +24,7 @@ function createTab(name, review, score, hours){
      
     let scoreheader = document.createElement('h2');
     scoreheader.innerHTML = score + '/10';
+    scoreheader.id = "scorehead";
     div.append(scoreheader);
 
     let hoursplayed = document.createElement('h2');

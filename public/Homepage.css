@@ -84,7 +84,7 @@ h2{
 
   #BackButton{
     font-size: 1.9vw;
-    margin-right: 90vw;
+    margin-right: 88vw;
     margin-top: 5.5vw;
     padding: .5vw .7vw;
     background-color:#5D001E;
@@ -112,6 +112,10 @@ h2{
 
   .gamelink:hover{
     background-color:#E3242B ;
+}
+
+#scorehead{
+    font-size: 1.9vw; 
 }
 
 BackButton:hover{
